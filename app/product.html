@@ -132,75 +132,25 @@
       <div class="container">
         <div class="product__top">
           <ul class="product__list-filter">
-            <li class="product__item-filter active">
-              <div class="product__wrapper-filter">
-                <span class="product__text-filter">
-                  Все
-                </span>
-              </div>
-            </li>
             <li class="product__item-filter">
               <div class="product__wrapper-filter">
-                <span class="product__text-filter">
+                <a class="product__text-filter js-ancor-link" href="#popular"> 
                   Популярные блюда
-                </span>
+                </a>
               </div>
             </li>
             <li class="product__item-filter">
               <div class="product__wrapper-filter">
-                <span class="product__text-filter">
-                  Сеты
-                </span>
-              </div>
-            </li>
-            <li class="product__item-filter">
-              <div class="product__wrapper-filter">
-                <span class="product__text-filter">
+                <a class="product__text-filter js-ancor-link" href="#maccombo">
                   МакКомбо
                 </span>
               </div>
             </li>
             <li class="product__item-filter">
               <div class="product__wrapper-filter">
-                <span class="product__text-filter">
-                  Сандвичи
+                <a class="product__text-filter js-ancor-link" href="#pizza">
+                  Пицца
                 </span>
-              </div>
-            </li>
-            <li class="product__item-filter">
-              <div class="product__wrapper-filter">
-                <span class="product__text-filter">
-                  Картофель
-                </span>
-              </div>
-            </li>
-            <li class="product__item-filter">
-              <div class="product__wrapper-filter">
-                <span class="product__text-filter">
-                  Десерты
-                </span>
-              </div>
-            </li>
-            <li class="product__item-filter">
-              <div class="product__wrapper-filter">
-                <span class="product__text-filter">
-                  Хеппи Мил
-                </span>
-              </div>
-            </li>
-            <li class="product__item-filter">
-              <div class="product__wrapper-filter">
-                <span class="product__text-filter">
-                  Напитки и коктейли
-                </span>
-              </div>
-            </li>
-            <li class="product__item-filter">
-              <div class="product__wrapper-filter">
-                <span class="product__text-filter">
-                  Ещё
-                </span>
-                <i class="fas fa-chevron-down"></i>
               </div>
             </li>
           </ul>
@@ -220,7 +170,7 @@
           <ul class="product__list-main">
             <li class="product__item-main">
               <div class="product__wrapper-main">
-                <h2 class="product__title title">
+                <h2 class="product__title title" id="popular">
                   Популярные блюда
                 </h2>
                 <ul class="product__list">
@@ -283,7 +233,7 @@
             </li>
             <li class="product__item-main">
               <div class="product__wrapper-main">
-                <h2 class="product__title title">
+                <h2 class="product__title title" id="maccombo">
                   МакКомбо
                 </h2>
                 <ul class="product__list">
@@ -400,7 +350,7 @@
             </li>
             <li class="product__item-main">
               <div class="product__wrapper-main">
-                <h2 class="product__title title">
+                <h2 class="product__title title" id="pizza">
                   Пицца
                 </h2>
                 <ul class="product__list">
@@ -769,6 +719,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="javaScript/index.js"></script>
+    <script src="javaScript/addIndex.js"></script>
 		<!-- Optional JavaScript -->
   </body>
 </html>

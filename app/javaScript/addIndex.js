@@ -1,3 +1,12 @@
+function getCoords(elem) {
+  let box = elem.getBoundingClientRect();
+
+  return {
+    top: box.top + pageYOffset,
+    left: box.left + pageXOffset
+  };
+}
+
 const ancors = () => {
   const links = document.querySelectorAll('.js-ancor-link');
 
@@ -14,3 +23,7 @@ const ancors = () => {
     });
   });
 };
+
+ancors();
+
+console.log('wefew');
