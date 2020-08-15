@@ -1,0 +1,832 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="styles/index.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,300;0,400;0,700;0,900;1,200;1,300;1,400;1,500;1,900&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <title>McDonald's</title>
+  </head>
+  <body>
+    <header class="header wrapper wrapper--header">
+      <div class="container container--header">
+        <button class="header__button button button--transparent">
+          <img src="images/geo-black.png" alt="geo" class="header__img-btn">
+          Ростов-на-Дону
+        </button>
+        <button class="header__button button button--transparent">
+          <img src="images/plane.png" alt="geo" class="header__img-btn">
+          Куда доставить?
+        </button>
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="./index.php" class="nav__link">
+                Главная
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="" class="nav__link">
+                Партнерам
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="./kuryeram.html" class="nav__link">
+                Курьерам
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <input type="text" class="search header__search" placeholder="Введите название: блюд, магазинов, ресторанов и т.п.">
+        <button class="button button--grey header__find">
+          Найти
+        </button>
+        <button class="button button--yellow header__cost">
+          <img src="images/cost.png" alt="cost">
+          890 &#8381;
+        </button>
+      </div>
+    </header>
+
+    <section class="wrapper wrapper--hero hero hero--add hero--icons">
+      <div class="hero__left" style="background-image: url('./images/product-bg.jpg');">
+        <div class="hero__wrap">
+          <h2 class="hero__title title">
+            McDonald's
+          </h2>
+          <div class="hero__nav">
+            <ul class="hero__list-nav">
+              <li class="hero__item-nav">
+                <a href="" class="hero__link-nav">
+                  Главная
+                </a>
+              </li>
+              <li class="hero__item-nav">
+                <a href="" class="hero__link-nav">
+                  Готовая еда
+                </a>
+              </li>
+              <li class="hero__item-nav">
+                <a href="" class="hero__link-nav">
+                  McDonald's
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="hero__right">
+        <div class="hero__name elzevir">
+          Матрешка
+        </div>
+        <div class="hero__slogan">
+          <q>Всё <br> в одном</q>
+        </div>
+        <ul class="hero__list">
+          <li class="hero__item">
+            <div class="hero__wrapper">
+              <img src="./images/inform.png" alt="inform" class="hero__img">
+              <div class="hero__text-about">
+                Информация <br> о ресторане
+              </div>
+              <div class="hero__popup">
+                <span class="hero__title-popup">
+                  Макдоналдс
+                </span>
+                <ul class="hero__list-popup">
+                  <li class="hero__item-popup">
+                    улица Зорге, 33 Доставка до 23:30
+                  </li>
+                  <li class="hero__item-popup">
+                    Бургеры, Завтраки, Выпечка, Кофе
+                  </li>
+                  <li class="hero__item-popup">
+                    Исполнитель (продавец): ООО "ЮРП", 115054, 
+                    Москва г, Валовая ул, дом № 26, этаж 12Ант, 
+                    комната 9А, ИНН 9705119058, рег.номер 
+                    1187746550958. Информация о потребительских
+                    свойствах продукции доступна в ресторане и на
+                    Режим работы ресторана: с 08:00 до 23:00
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="hero__item">
+            <div class="hero__wrapper">
+              <img src="./images/cost.png" alt="cost" class="hero__img">
+              <div class="hero__text-about">
+                Заказ от 100 <br> рублей
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="product wrapper wrapper--product">
+      <div class="container">
+        <div class="product__top">
+          <ul class="product__list-filter">
+            <li class="product__item-filter active">
+              <div class="product__wrapper-filter">
+                <span class="product__text-filter">
+                  Все
+                </span>
+              </div>
+            </li>
+            <li class="product__item-filter">
+              <div class="product__wrapper-filter">
+                <span class="product__text-filter">
+                  Популярные блюда
+                </span>
+              </div>
+            </li>
+            <li class="product__item-filter">
+              <div class="product__wrapper-filter">
+                <span class="product__text-filter">
+                  Сеты
+                </span>
+              </div>
+            </li>
+            <li class="product__item-filter">
+              <div class="product__wrapper-filter">
+                <span class="product__text-filter">
+                  МакКомбо
+                </span>
+              </div>
+            </li>
+            <li class="product__item-filter">
+              <div class="product__wrapper-filter">
+                <span class="product__text-filter">
+                  Сандвичи
+                </span>
+              </div>
+            </li>
+            <li class="product__item-filter">
+              <div class="product__wrapper-filter">
+                <span class="product__text-filter">
+                  Картофель
+                </span>
+              </div>
+            </li>
+            <li class="product__item-filter">
+              <div class="product__wrapper-filter">
+                <span class="product__text-filter">
+                  Десерты
+                </span>
+              </div>
+            </li>
+            <li class="product__item-filter">
+              <div class="product__wrapper-filter">
+                <span class="product__text-filter">
+                  Хеппи Мил
+                </span>
+              </div>
+            </li>
+            <li class="product__item-filter">
+              <div class="product__wrapper-filter">
+                <span class="product__text-filter">
+                  Напитки и коктейли
+                </span>
+              </div>
+            </li>
+            <li class="product__item-filter">
+              <div class="product__wrapper-filter">
+                <span class="product__text-filter">
+                  Ещё
+                </span>
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container container--product">
+        <div class="product__left">
+          <ul class="product__list-main">
+            <li class="product__item-main">
+              <div class="product__wrapper-main">
+                <h2 class="product__title title">
+                  Популярные блюда
+                </h2>
+                <ul class="product__list">
+                  <li class="product__item">
+                    <div class="slider__wrap">
+                      <div class="slider__img">
+                        <img src="./images/slides1.jpg" alt="">
+                        <div class="slider__layover">
+                          Пицца Неаполитана большая 420 г
+                          Тесто, томатный пицца-соус, 
+                          сыр моцарелла, ветчина, помидоры, 
+                          красный лук, зелень, пряные травы, 
+                          оливковое масло(тесто на выбор) (30 см)
+                        </div>
+                      </div>
+                      <div class="slider__content">
+                        <div class="slider__about">
+                          <p class="slider__title">
+                            Название ресторана / кафе
+                          </p>
+                          <p class="slider__text">
+                            с доставкой по Ростову-на-Дону
+                          </p>
+                        </div>
+                        <div class="slider__cost">
+                          <span>499 руб.</span> 
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product__item">
+                    <div class="slider__wrap">
+                      <div class="slider__img">
+                        <img src="./images/slides1.jpg" alt="">
+                        <div class="slider__layover">
+                          Пицца Неаполитана большая 420 г
+                          Тесто, томатный пицца-соус, 
+                          сыр моцарелла, ветчина, помидоры, 
+                          красный лук, зелень, пряные травы, 
+                          оливковое масло(тесто на выбор) (30 см)
+                        </div>
+                      </div>
+                      <div class="slider__content">
+                        <div class="slider__about">
+                          <p class="slider__title">
+                            Название ресторана / кафе
+                          </p>
+                          <p class="slider__text">
+                            с доставкой по Ростову-на-Дону
+                          </p>
+                        </div>
+                        <div class="slider__cost">
+                          <span>499 руб.</span> 
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="product__item-main">
+              <div class="product__wrapper-main">
+                <h2 class="product__title title">
+                  МакКомбо
+                </h2>
+                <ul class="product__list">
+                  <li class="product__item">
+                    <div class="slider__wrap">
+                      <div class="slider__img">
+                        <img src="./images/slides1.jpg" alt="">
+                        <div class="slider__layover">
+                          Пицца Неаполитана большая 420 г
+                          Тесто, томатный пицца-соус, 
+                          сыр моцарелла, ветчина, помидоры, 
+                          красный лук, зелень, пряные травы, 
+                          оливковое масло(тесто на выбор) (30 см)
+                        </div>
+                      </div>
+                      <div class="slider__content">
+                        <div class="slider__about">
+                          <p class="slider__title">
+                            Название ресторана / кафе
+                          </p>
+                          <p class="slider__text">
+                            с доставкой по Ростову-на-Дону
+                          </p>
+                        </div>
+                        <div class="slider__cost">
+                          <span>499 руб.</span> 
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product__item">
+                    <div class="slider__wrap">
+                      <div class="slider__img">
+                        <img src="./images/slides1.jpg" alt="">
+                        <div class="slider__layover">
+                          Пицца Неаполитана большая 420 г
+                          Тесто, томатный пицца-соус, 
+                          сыр моцарелла, ветчина, помидоры, 
+                          красный лук, зелень, пряные травы, 
+                          оливковое масло(тесто на выбор) (30 см)
+                        </div>
+                      </div>
+                      <div class="slider__content">
+                        <div class="slider__about">
+                          <p class="slider__title">
+                            Название ресторана / кафе
+                          </p>
+                          <p class="slider__text">
+                            с доставкой по Ростову-на-Дону
+                          </p>
+                        </div>
+                        <div class="slider__cost">
+                          <span>499 руб.</span> 
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product__item">
+                    <div class="slider__wrap">
+                      <div class="slider__img">
+                        <img src="./images/slides1.jpg" alt="">
+                        <div class="slider__layover">
+                          Пицца Неаполитана большая 420 г
+                          Тесто, томатный пицца-соус, 
+                          сыр моцарелла, ветчина, помидоры, 
+                          красный лук, зелень, пряные травы, 
+                          оливковое масло(тесто на выбор) (30 см)
+                        </div>
+                      </div>
+                      <div class="slider__content">
+                        <div class="slider__about">
+                          <p class="slider__title">
+                            Название ресторана / кафе
+                          </p>
+                          <p class="slider__text">
+                            с доставкой по Ростову-на-Дону
+                          </p>
+                        </div>
+                        <div class="slider__cost">
+                          <span>499 руб.</span> 
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product__item">
+                    <div class="slider__wrap">
+                      <div class="slider__img">
+                        <img src="./images/slides1.jpg" alt="">
+                        <div class="slider__layover">
+                          Пицца Неаполитана большая 420 г
+                          Тесто, томатный пицца-соус, 
+                          сыр моцарелла, ветчина, помидоры, 
+                          красный лук, зелень, пряные травы, 
+                          оливковое масло(тесто на выбор) (30 см)
+                        </div>
+                      </div>
+                      <div class="slider__content">
+                        <div class="slider__about">
+                          <p class="slider__title">
+                            Название ресторана / кафе
+                          </p>
+                          <p class="slider__text">
+                            с доставкой по Ростову-на-Дону
+                          </p>
+                        </div>
+                        <div class="slider__cost">
+                          <span>499 руб.</span> 
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="product__item-main">
+              <div class="product__wrapper-main">
+                <h2 class="product__title title">
+                  Пицца
+                </h2>
+                <ul class="product__list">
+                  <li class="product__item">
+                    <div class="slider__wrap">
+                      <div class="slider__img">
+                        <img src="./images/slides1.jpg" alt="">
+                        <div class="slider__layover">
+                          Пицца Неаполитана большая 420 г
+                          Тесто, томатный пицца-соус, 
+                          сыр моцарелла, ветчина, помидоры, 
+                          красный лук, зелень, пряные травы, 
+                          оливковое масло(тесто на выбор) (30 см)
+                        </div>
+                      </div>
+                      <div class="slider__content">
+                        <div class="slider__about">
+                          <p class="slider__title">
+                            Название ресторана / кафе
+                          </p>
+                          <p class="slider__text">
+                            с доставкой по Ростову-на-Дону
+                          </p>
+                        </div>
+                        <div class="slider__cost">
+                          <span>499 руб.</span> 
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product__item">
+                    <div class="slider__wrap">
+                      <div class="slider__img">
+                        <img src="./images/slides1.jpg" alt="">
+                        <div class="slider__layover">
+                          Пицца Неаполитана большая 420 г
+                          Тесто, томатный пицца-соус, 
+                          сыр моцарелла, ветчина, помидоры, 
+                          красный лук, зелень, пряные травы, 
+                          оливковое масло(тесто на выбор) (30 см)
+                        </div>
+                      </div>
+                      <div class="slider__content">
+                        <div class="slider__about">
+                          <p class="slider__title">
+                            Название ресторана / кафе
+                          </p>
+                          <p class="slider__text">
+                            с доставкой по Ростову-на-Дону
+                          </p>
+                        </div>
+                        <div class="slider__cost">
+                          <span>499 руб.</span> 
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product__item">
+                    <div class="slider__wrap">
+                      <div class="slider__img">
+                        <img src="./images/slides1.jpg" alt="">
+                        <div class="slider__layover">
+                          Пицца Неаполитана большая 420 г
+                          Тесто, томатный пицца-соус, 
+                          сыр моцарелла, ветчина, помидоры, 
+                          красный лук, зелень, пряные травы, 
+                          оливковое масло(тесто на выбор) (30 см)
+                        </div>
+                      </div>
+                      <div class="slider__content">
+                        <div class="slider__about">
+                          <p class="slider__title">
+                            Название ресторана / кафе
+                          </p>
+                          <p class="slider__text">
+                            с доставкой по Ростову-на-Дону
+                          </p>
+                        </div>
+                        <div class="slider__cost">
+                          <span>499 руб.</span> 
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="product__item">
+                    <div class="slider__wrap">
+                      <div class="slider__img">
+                        <img src="./images/slides1.jpg" alt="">
+                        <div class="slider__layover">
+                          Пицца Неаполитана большая 420 г
+                          Тесто, томатный пицца-соус, 
+                          сыр моцарелла, ветчина, помидоры, 
+                          красный лук, зелень, пряные травы, 
+                          оливковое масло(тесто на выбор) (30 см)
+                        </div>
+                      </div>
+                      <div class="slider__content">
+                        <div class="slider__about">
+                          <p class="slider__title">
+                            Название ресторана / кафе
+                          </p>
+                          <p class="slider__text">
+                            с доставкой по Ростову-на-Дону
+                          </p>
+                        </div>
+                        <div class="slider__cost">
+                          <span>499 руб.</span> 
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <aside class="product__right">
+          <ul class="product__list-time">
+            <li class="product__item-time">
+              <div class="product__wrap-time">
+                <img src="./images/clock-green.png" alt="clock" class="product__img-time">
+                <span class="product__text-time">
+                  Открыто с 08:00
+                </span>
+              </div>
+            </li>
+            <li class="product__item-time">
+              <div class="product__wrap-time">
+                <img src="./images/clock-red.png" alt="clock" class="product__img-time">
+                <span class="product__text-time">
+                  Закрыто с 23:00
+                </span>
+              </div>
+            </li>
+            <li class="product__item-time">
+              <div class="product__wrap-time">
+                <img src="./images/car.png" alt="clock" class="product__img-time">
+                <span class="product__text-time">
+                  Доставка до 22:00
+                </span>
+              </div>
+            </li>
+          </ul>
+          <div class="product__order">
+            <button class="product__trash">
+              <img src="./images/trash.png" alt="trash">
+            </button>
+            <h2 class="product__title-order title">
+              Мой заказ
+            </h2>
+            <div class="product__order-main">
+              <ul class="product__products">
+                <li class="product__product">
+                  <div class="product__wrapper">
+                    <div class="product__header">
+                      <span class="product__bold product__name">
+                        Биг Мак 210 г.
+                      </span>
+                      <div class="counter js-counter">
+                        <button class="counter__button js-plus">
+                          <span>+</span>
+                        </button>
+                        <input type="text" disabled class="counter__input" value="1">
+                        <div class="counter__count js-count">
+                          1
+                        </div>
+                        <button class="counter__button js-minus">
+                          <span>-</span>
+                        </button>
+                      </div>
+                      <span class="product__bold product__cost">
+                        175 руб.
+                      </span>
+                    </div>
+                    <div class="product__body">
+                      <ul class="product__list-add">
+                        <li class="product__item-add">
+                          <span class="product__text">
+                            Дополнительно Соус Биг Мак
+                          </span>
+                        </li>
+                        <li class="product__item-add">
+                          <span class="product__text">
+                            Дополнительно Сыр
+                          </span>
+                        </li>
+                        <li class="product__item-add">
+                          <span class="product__text">
+                            Убрать Огурец маринов
+                          </span>
+                        </li>
+                        <li class="product__item-add">
+                          <span class="product__text">
+                            Убрать Салат
+                          </span>
+                        </li>
+                        <li class="product__item-add">
+                          <span class="product__text">
+                            Убрать Лук
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="product__product">
+                  <div class="product__wrapper">
+                    <div class="product__header">
+                      <span class="product__bold product__name">
+                        Доставка
+                      </span>
+                      <span class="product__bold product__cost">
+                        249 руб.
+                      </span>
+                    </div>
+                    <div class="product__body">
+                      <span class="product__text">
+                        Закажите ещё на 225 ₽ для доставки за 149 ₽
+                      </span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="product__order-bottom">
+              <label for="" class="product__wrapper-input">
+                <span class="product__label-input">
+                  Адрес доставки
+                </span>
+                <input type="text" class="product__input product__input--long" value="Ростов-на-Дону, ул. Зорге, д. 54">
+              </label>
+              <div class="product__line-order"></div>
+              <ul class="product__list-input">
+                <li class="product__item-input">
+                  <label for="" class="product__wrapper-input">
+                    <span class="product__label-input">
+                      Во сколько доставить заказ?
+                    </span>
+                    <div class="product__box-input">
+                      <input type="text" class="product__input">
+                      <img src="./images/clock-black.png" alt="clock">
+                      <span>Выберите время</span>
+                    </div>
+                  </label>
+                </li>
+                <li class="product__item-input">
+                  <label for="" class="product__wrapper-input">
+                    <span class="product__label-input">
+                      Сумма к оплате
+                    </span>
+                    <div class="product__box-input">
+                      <input type="text" class="product__input">
+                      <span>
+                        1299 ₽
+                      </span>
+                    </div>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <label for="" class="product__wrapper-checkbox">
+            <input type="checkbox" class="product__input-checkbox">
+            <span class="product__text-checkbox">
+              Согласие с публичной офертой
+            </span>
+          </label>
+          <input type="submit" class="button product__button" value="Оформить заказ">
+        </aside>
+      </div>
+    </section>
+
+    <section class="form wrapper wrapper--form form--bg">
+      <div class="container container--form">
+        <h2 class="title form__title">
+          Остались вопросы или есть предложения?
+        </h2>
+        <p class="subtitle form__subtitle">
+          Оставьте контакты и мы обязательно с Вами свяжемся.
+        </p>
+        <form action="" class="form__form">
+          <input type="text" class="form__input" placeholder="Ваше имя">
+          <input type="text" class="form__input" placeholder="Номер телефона">
+          <input type="text" class="form__input" placeholder="E-mail">
+          <input type="submit" class="form__btn button">
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer wrapper wrapper--footer">
+      <div class="container container--footer">
+        <ul class="footer__list-main">
+          <li class="footer__item-main">
+            <div class="footer__column">
+              <h3 class="footer__title">
+                Матрешка
+              </h3>
+              <img src="./images/logo.png" alt="logo" class="footer__logo">
+              <p class="footer__all">
+                Всё в одном
+              </p>
+            </div>
+          </li>
+          <li class="footer__item-main">
+            <div class="footer__column footer__column--info">
+              <h3 class="footer__title">
+                Информация
+              </h3>
+              <ul class="footer__list footer__list--info">
+                <li class="footer__item">
+                  <a href="" class="footer__link">
+                    О нас
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">
+                    Новости
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">
+                    Отзывы
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">
+                    Контакты
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">
+                    Правила пользования сайтом
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="./Politika_Polzovatelskoe.html" class="footer__link">
+                    Пользовательское соглашение
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="footer__item-main">
+            <div class="footer__column footer__column--cat">
+              <h3 class="footer__title">
+                Категории товаров
+              </h3>
+              <ul class="footer__list footer__list--cat">
+                <li class="footer__item">
+                  <a href="" class="footer__link">
+                    Готовая еда
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">
+                    Продукты
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">
+                    Спорт-питание
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">
+                    Эко-питание
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">
+                    Товары для животных
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">
+                    Хоз. товары
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="" class="footer__link">
+                    Цветы
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="footer__item-main">
+            <div class="footer__column footer__column--contacts">
+              <h3 class="footer__title">
+                Контактная информация
+              </h3>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <div class="footer__link">
+                    <div class="footer__icon">
+                      <img src="./images/geo.png" alt="" class="footer__icon">
+                    </div>
+                    000-000, г. Ростов-на-Дону,
+                    ул., «Название» стр.00
+                  </div>
+                </li>
+                <li class="footer__item">
+                  <a href="tel: +79000000000" class="footer__link">
+                    
+                    <div class="footer__icon">
+                      <i class="fas fa-phone" class="footer__icon"></i>
+                    </div>
+                    +7(900) 000-00-00
+                  </a>
+                </li>
+                <li class="footer__item">
+                  <a href="mailto:info@matreshka.ru" class="footer__link">
+                    <div class="footer__icon">
+                      <i class="fas fa-envelope" class="footer__icon"></i>
+                    </div>
+                    info@matreshka.ru
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <div class="footer__politic">
+          <span>Все права защищены</span>
+          <span>2020</span>
+          <span>MATRёSHKA</span>
+          | Политика конфиденциальности
+        </div>
+      </div>
+    </footer>
+    
+    <!-- jQuery first-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="javaScript/index.js"></script>
+		<!-- Optional JavaScript -->
+  </body>
+</html>

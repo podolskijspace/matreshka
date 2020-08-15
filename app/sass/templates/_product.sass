@@ -1,0 +1,261 @@
+.product
+  &__top
+    margin-bottom: 36px
+
+  &__list-filter
+    display: flex
+    flex-wrap: wrap
+    margin: -3px
+
+  &__item-filter
+    padding: 3px
+
+    @media(min-width: $media-phone)
+      &:hover
+        cursor: pointer
+
+    &.active
+      .product__wrapper-filter
+        background: #ffd615
+
+  &__wrapper-filter
+    width: max-content
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 15px
+    border-radius: 20px
+
+    i
+      margin-left: 5px
+      margin-bottom: -3px
+
+  &__text-filter
+    display: block
+    font-size: 14px
+    line-height: 100%
+    font-weight: 300
+
+  &__right
+    min-width: 414px
+    width: 414px
+    margin-left: 50px
+    @media (max-width: $media-notebook)
+      margin-left: 20px
+    @media (max-width: $media-pc)
+      display: none
+
+  &__list-main
+    margin: -28px 0
+    @media (max-width: $media-phone)
+      margin: -15px 0
+
+
+  &__item-main
+    padding: 28px 0
+    @media (max-width: $media-phone)
+      padding: 15px 0
+
+  &__title
+    margin-bottom: 22px
+    @media (max-width: $media-phone)
+      margin-bottom: 15px
+
+  &__list
+    margin: -27px -5px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    @media (max-width: $media-pc)
+      justify-content: space-around
+    @media (max-width: $media-phone)
+      margin: -15px -5px
+
+  &__item
+    padding: 27px 5px
+    @media (max-width: $media-phone)
+      padding: 15px 5px
+
+  &__list-time
+    margin: 42px 0 24px
+    display: flex
+
+  &__item-time
+    margin: 0
+    margin-right: 8px
+    
+    &:last-child
+      margin: 0
+
+  &__wrap-time
+    display: flex
+    align-items: center
+
+  &__img-time
+    margin-right: 4px
+
+  &__text-time
+    font-size: 12px
+    line-height: 100%
+    font-weight: 300
+
+  &__order
+    position: relative
+    padding: 36px 16px 15px
+    background: #F8F9FA
+
+  &__trash
+    position: absolute
+    top: 48px
+    right: 25px
+    background: transparent
+    border: 0
+
+  &__layover
+    position: absolute
+    top: 290px
+    left: 50%
+    transform: translateX(-50%)
+    display: flex
+    flex-direction: column
+    align-items: center
+
+  &__img-layover
+    margin-bottom: 21px
+
+  &__text-layover
+    text-align: center
+    font-size: 16px
+    font-weight: 300
+    font-style: italic
+
+  &__title-order
+    margin-bottom: 25px
+    text-align: center
+
+  &__order-main
+    min-height: 600px
+    padding-bottom: 40px
+    
+  &__line-order
+    margin: 20px 0 15px -16px
+    width: calc(100% + 32px)
+    height: 1px
+    background-color: #bdbdbd
+
+  &__order-bottom
+    padding: 0 16px
+  
+  &__label-input
+    display: block
+    margin-bottom: 16px
+    font-size: 11px
+    line-height: 100%
+    font-weight: 300
+    color: #a9a9a9
+
+  &__input
+    display: block
+    width: 155px
+    height: 36px
+    padding-left: 10px
+    font-size: 12px
+    background: #F1F1F1
+    border-radius: 5px
+    border: 0
+
+    &--long
+      width: 100%
+
+    &::placeholder
+      colorfont-size: 12px
+
+    &::-webkit-input-placeholder 
+      font-size: 12px
+
+    &::-moz-placeholder 
+      font-size: 12px
+
+    &:-moz-placeholder 
+      font-size: 12px
+
+    &:-ms-input-placeholder 
+      font-size: 12px
+
+  &__list-input
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+  &__box-input
+    position: relative
+    text-align: center
+    font-size: 12px
+    font-weight: 300
+
+    img
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      left: 6px
+    
+    span
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      display: block
+      width: 100%
+
+  &__wrapper-checkbox
+    display: flex
+    justify-content: center
+    margin: 30px 0 22px
+
+  &__input-checkbox
+    margin-right: 14px
+
+  &__text-checkbox
+    font-size: 12px
+    font-weight: 300
+    text-decoration: underline
+    color: #131313
+
+  &__button
+    width: 100%
+    padding: 14px 140px
+    font-size: 16px
+    font-weight: 700
+    color: #000
+    background: #FFD71B
+
+  &__bold
+    font-weight: 700
+    font-size: 16px
+
+  &__header
+    display: flex
+    justify-content: space-between
+    margin-bottom: 22px
+
+  &__name
+    width: 168px
+
+  &__products
+    margin: -30px 0
+
+  &__product
+    padding: 30px 32px 30px 16px
+    border-bottom: 1px solid #bdbdbd
+    &:last-child
+      border: 0
+
+  &__list-add
+    margin: 0
+
+  &__item-add
+    font-size: 13px
+
+  &__text
+    font-size: 11px
+    color: #252525

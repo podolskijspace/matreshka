@@ -1,0 +1,103 @@
+.tabs
+  &__list-btn
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    @media (max-width: $media-phone)
+      margin: -5px 0
+      justify-content: space-around
+  &__item-btn
+    @media (max-width: $media-phone)
+      padding: 5px 0
+    &.active
+      .tabs__wrapper-btn
+        background: #FFD814
+        border-color: #FFD814
+      .tabs__wrapper-btn
+        &::after, &::before
+          content: ''
+  &__wrapper-btn
+    position: relative
+    display: flex
+    align-items: center
+    padding: 0 7px
+    width: 124px
+    height: 40px
+    border: 1px solid#eeeeef
+    border-radius: 3px
+    &::before
+      position: absolute
+      display: block
+      bottom: -36px
+      left: 50%
+      transform: translateX(-50%)
+      border: 12px solid transparent
+      border-top: 12px solid #EFEFEF
+    &::after
+      position: absolute
+      display: block
+      bottom: -24px
+      left: 50%
+      transform: translateX(-50%)
+      border: 6px solid transparent
+      border-top: 6px solid #fff
+    @media (max-width: $media-phone)
+      &::before, &::after 
+        display: none
+    @media (min-width: $media-pc)
+      &:hover
+        cursor: pointer
+  &__img-btn
+    margin-right: 10px
+    max-width: 40px
+    max-height: 34px
+  &__text-btn
+    font-size: 12px
+    margin: 0
+  &__main
+    padding: 54px 170px 26px 70px
+    margin-top: 14px
+    border: 1px solid #EFEFEF
+    border-radius: 5px
+    @media (max-width: $media-pc)
+      padding: 15px 10px
+  &__img
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 40px
+    height: 40px
+    margin-right: 8px
+  &__item-main
+    display: none
+    &.active
+      display: block
+  &__list
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin: -12px -10px
+    @media (max-width: $media-pc)
+      justify-content: space-around
+  &__item 
+    padding: 12px 10px
+  &__wrapper
+    display: flex
+    align-items: center
+    @media (min-width: $media-pc)
+      &:hover
+        cursor: pointer
+        .tabs__content
+          background: #FFD814
+          border-color: #FFD814
+  &__content
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 0 8px
+    width: 176px
+    height: 40px
+    font-size: 12px
+    text-align: center
+    border: 1px solid #eeeeef
+    border-radius: 10px

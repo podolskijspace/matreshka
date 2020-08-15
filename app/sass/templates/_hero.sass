@@ -1,0 +1,254 @@
+.hero 
+  display: flex
+  &::after
+    content: ''
+    display: block
+    position: absolute
+    left: 0
+    bottom: 0
+    border: 30px solid transparent
+    border-bottom: 30px solid white
+    border-left: 30px solid white
+    @media (max-width: $media-phone)
+      display: none
+
+  &__left
+    position: relative
+    min-width: calc(100% - 429px)
+    background-repeat: no-repeat
+    background-size: cover
+    display: flex
+    justify-content: center
+    align-items: center
+    &::before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      background: rgba(0,0,0,.2)
+    @media (max-width: $media-phone)
+      display: none
+
+  &__wrap
+    position: relative
+
+  &__list-left
+    height: 100%
+    width: 100%
+    margin: 0
+    .slick-list, .slick-track
+      height: 100%
+
+  &__item-left 
+    height: 100%
+    background-repeat: no-repeat
+    background-size: cover
+
+
+  &__title
+    margin-bottom: 18px
+    color: #fff
+
+  &__list-nav
+    display: flex
+    justify-content: center
+    margin: -9px
+
+  &__item-nav
+    position: relative
+    padding: 9px
+    a
+      color: #fff
+      font-weight: bold
+
+    &::after
+      content: '-'
+      position: absolute
+      right: 0
+      top: 50%
+      transform: translate(50%, -50%)
+      display: block
+      color: #fff
+    
+    &:first-child
+      a
+        color: #F5C121
+
+    &:last-child
+      &::after
+        content: none
+
+  &__right
+    min-width: 429px
+    width: 429px
+    background: #FFD71B
+    padding: 55px 50px 38px 42px
+    @media (max-width: $media-phone)
+      width: 100%
+      min-width: auto
+      padding: 25px 15px
+
+  &__name
+    font-size: 33px
+    color: #fff
+
+  &__slogan
+    margin: 0
+    margin-top: -30px
+    padding-bottom: 48px
+    padding-top: 60px
+    font-size: 60px
+    font-weight: 900
+    color: #080808
+    border-bottom: 2px solid #000
+    background: url("../../images/logo.png") no-repeat
+    background-position: 190px 0
+    @media (max-width: $media-phone)
+      br
+        display: block
+    q
+      quotes: "\00ab" "\00bb"
+    
+
+  &__list
+    display: flex
+    margin: 24px -23px 0
+
+  &__item
+    padding: 0 23px
+
+  &__wrapper
+    position: relative
+    display: flex
+    align-items: center
+    padding-left: 4px
+    @media(min-width: $media-pc)
+      &:hover
+        .hero__popup
+          opacity: 1
+  
+  &__img
+    margin-right: 15px
+
+  &__text-about
+    font-size: 12px
+    font-weight: 300
+    font-style: italic
+
+  &--add
+    .hero__right
+      padding: 56px 53px 79px 42px
+      @media (max-width: $media-phone)
+        padding: 25px 15px
+
+  &--icons
+    .hero__right
+      padding-bottom: 22px
+
+    .hero__slogan
+      padding-bottom: 35px
+
+  &__text
+    padding-top: 50px
+    font-size: 16px
+    color: #9a8212
+
+  &__text-bold
+    font-weight: 700
+    color:#050505
+
+  &__text-italic
+    font-style: italic
+
+  &__button
+    margin: 59px 0 69px
+    text-align: left
+
+  &__dots
+    display: flex
+    justify-content: center
+    margin: 0 -6px
+    li
+      padding: 0 6px
+      &.slick-active
+        button
+          background: #000000
+      button
+        width: 14px
+        height: 14px
+        background: #fff
+        border: 0
+        font-size: 0
+        @media (min-width: $media-phone)
+          &:hover
+            background: #000
+
+  &__popup
+    opacity: 0
+    position: absolute
+    right: calc(100% + 21px)
+    top: 0
+    width: 364px
+    padding: 19px 103px 11px 26px
+    background: #fff
+    border-radius: 8px
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18)
+    &::after
+      content: ''
+      position: absolute
+      top: 16px
+      right: -18px
+      transform: translateX(-50%)
+      border: 6px solid transparent
+      border-left: 6px solid #fff
+
+  &__title-popup
+    display: block
+    margin-bottom: 11px
+    font-size: 14px
+    font-weight: 700
+
+  &__list-popup
+    margin: -4px 0
+
+  &__item-popup
+    padding: 4px 0
+    font-size: 10px
+    font-weight: 300
+    color: #585858
+
+  &__breadcrump
+    display: none
+    margin-top: 15px
+    @media (max-width: $media-phone)
+      display: block
+
+  &__list-breadcrump
+    display: flex
+    margin: -9px
+
+  &__item-breadcrump
+    position: relative
+    padding: 9px
+    a
+      color: #000
+      font-weight: bold
+
+    &::after
+      content: '-'
+      position: absolute
+      right: 0
+      top: 50%
+      transform: translate(50%, -50%)
+      display: block
+      color: #000
+    
+    &:first-child
+      a
+        color: #F5C121
+
+    &:last-child
+      &::after
+        content: none

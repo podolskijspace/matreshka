@@ -1,0 +1,37 @@
+.info
+  &__columns
+    margin: -20px
+    display: flex
+    justify-content: space-evenly
+    @media (max-width: $media-phone)
+      margin: -5px
+      justify-content: space-between
+      flex-wrap: wrap
+
+  &__column
+    padding: 20px
+    @media (max-width: $media-phone)
+      padding: 5px
+
+  &__title
+    margin: 0 0 15px
+    font-size: 24px
+    font-weight: 700
+    @media (max-width: $media-phone)
+      font-size: 16px
+      margin-bottom: 5px
+    
+  &__list
+    margin: -5px 0
+    @media (max-width: $media-phone)
+      margin: -2px 0
+
+  &__item
+    padding: 5px 0;
+    margin: 0
+    @media (max-width: $media-phone)
+      padding: 2px 0
+
+  &__text
+    font-size: 18px
+    font-style: italic

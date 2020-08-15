@@ -1,0 +1,73 @@
+.news
+  &--single
+    background: #fff
+    &::before
+      content: none
+    &::after
+      border: 40px solid transparent
+      border-bottom: 40px solid #F8F9FA
+      border-left: 40px solid #F8F9FA
+  &__top
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    margin-bottom: 70px
+    @media (max-width: $media-phone)
+      margin-bottom: 30px
+      align-items: center
+  &__title
+    margin-bottom: 0
+  &__all
+    font-size: 12px
+    font-weight: 500
+    color: #454d4e
+    i
+      vertical-align: bottom
+  &__list
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    margin: -15px
+    @media (max-width: $media-phone)
+      justify-content: space-around
+  &__item
+    padding: 15px
+  &__wrapper
+    display: block
+    max-width: 335px
+    text-align: center
+    @media (max-width: $media-phone)
+      width: 290px
+  &__img
+    width: 335px
+    height: 418px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 24px
+    @media (max-width: $media-phone)
+      width: 290px
+      height: 355px
+  &__content
+    padding: 0 15px 20px
+  &__text
+    font-size: 16px
+    font-weight: 700
+    &::after
+      content: ''
+      display: block
+      width: 116px
+      height: 2px
+      margin: 14px auto 18px
+      background: #000
+  &__date
+    margin-bottom: 36px
+    font-size: 12px
+    font-weight: 700
+    color: #454d4e
+    @media (max-width: $media-phone)
+      margin-bottom: 25px
+  &__button
+    padding-right: 47px
+    .button__icon
+      right: 18px

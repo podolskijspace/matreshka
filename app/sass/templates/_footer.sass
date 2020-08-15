@@ -1,0 +1,77 @@
+.footer
+  color: #fff
+  
+  &__list-main
+    display: flex
+    justify-content: space-between
+    @media (max-width: $media-phone)
+      flex-wrap: wrap
+      margin: -10px -15px
+
+  &__item-main
+    @media (max-width: $media-phone)
+      padding: 10px 15px
+      &:first-child
+        margin: auto
+
+  &__column
+    &--info
+      width: 150px
+      text-align-last: left
+      li
+        margin-bottom: 30px
+        @media (max-width: $media-phone)
+          margin-bottom: 5px
+    
+    &--cat
+      width: 150px
+      li
+        margin-bottom: 26px
+        @media (max-width: $media-phone)
+          margin-bottom: 5px
+    
+    &--contacts
+      width: 214px
+      li
+        margin-bottom: 38px
+        @media (max-width: $media-phone)
+          margin-bottom: 5px
+
+  &__list
+    margin: 50px 0 0
+    @media (max-width: $media-phone)
+      margin-top: 10px
+  
+  &__title
+    margin: 0
+    font-size: 16px
+    font-family: 'Elzevir', sans-serif
+    text-align: center
+
+  &__logo
+    display: block
+    margin: 26px auto 32px
+  
+  &__all
+    margin: 0
+    font-size: 20px
+    font-weight: 700
+
+  &__link
+    display: flex
+    font-size: 14px
+    line-height: 14px
+    margin: 0
+    color: #fff
+
+  &__icon
+    display: block
+    margin-right: 6px
+
+  &__politic
+    font-size: 14px
+    text-align: center
+    @media (max-width: $media-phone)
+      margin-top: 15px
+    span
+      margin-right: 4px

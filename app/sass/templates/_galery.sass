@@ -1,0 +1,29 @@
+.galery
+  &__item
+    background: grey
+    height: 800px
+    @media (max-width: $media-phone)
+      height: 300px
+    &:nth-child(2n)
+      background: green
+  .slick-dots
+    display: flex
+    justify-content: center
+    margin: 20px -5px 0
+    li
+      padding: 0 5px
+      button
+        width: 12px 
+        height: 12px
+        border-radius: 50%
+        padding: 0
+        background: #EFEFEF
+        border: 0
+        outline: 0
+        font-size: 0
+        transition: color .3s, background-color .3s
+        &:hover
+          background: #000
+      &.slick-active
+        button
+          background: #FFD70D

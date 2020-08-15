@@ -1,0 +1,71 @@
+.question
+  &::after
+    content: ''
+    display: block
+    position: absolute
+    left: 0
+    bottom: 0
+    border: 30px solid transparent
+    border-bottom: 30px solid #F8F9FA
+    border-left: 30px solid #F8F9FA
+    @media (max-width: $media-phone)
+      display: none
+
+  &__title
+    margin-bottom: 40px
+    font-size: 24px
+    font-weight: 700
+    color: #3d3d3d
+    @media (max-width: $media-phone)
+      margin-bottom: 25px
+
+  &__list
+    margin: -24px 0
+    @media (max-width: $media-phone)
+      margin: -8px 0
+
+  &__item
+    padding: 24px 0
+    @media (max-width: $media-phone)
+      padding: 8px 0
+    
+    &.active
+      .question__bottom
+        max-height: none
+        padding-top: 20px
+      
+      .question__down
+        transform: rotate(0.5turn) translateY(10px)
+        
+  &__question
+    margin: 0
+    padding-right: 15px
+    font-size: 20px
+    font-weight: 300
+    font-style: italic
+    color: #3d3d3d
+    @media (max-width: $media-phone)
+      font-size: 16px
+
+  &__top
+    position: relative
+
+  &__down
+    position: absolute
+    right: 0
+    top: 50%
+    transform: translateY(-50%)
+  
+  &__bottom
+    max-height: 0
+    overflow: hidden
+    transition: .3s
+
+  &__text
+    margin: 0
+    font-size: 16px
+    font-weight: 300
+    font-style: italic
+    color: #3d3d3d
+    @media (max-width: $media-phone)
+      font-size: 14px

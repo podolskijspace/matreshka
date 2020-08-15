@@ -1,0 +1,135 @@
+.wrapper
+	position: relative
+	display: flex
+	justify-content: center
+	width: 100%
+	max-width: 1920px
+	margin: 0px auto
+	overflow: hidden
+	&--header
+		padding: 26px 0 22px
+	&--hero
+		overflow: visible
+		z-index: 3
+		@media (max-width: $media-phone)
+			flex-direction: column
+	&--tabs
+		padding: 78px 0
+	&--slider
+		padding-bottom: 50px
+		@media (max-width: $media-phone)
+			padding-bottom: 0
+	&--news
+		padding: 75px 0 130px
+		background: #C6DBDD
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			right: 0
+			top: 0
+			border: 40px solid transparent
+			border-top: 40px solid white
+			border-right: 40px solid white
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			left: 0
+			bottom: 0
+			border: 40px solid transparent
+			border-bottom: 40px solid white
+			border-left: 40px solid white
+		@media (max-width: $media-phone)
+			padding: 20px 0
+			&::after, &::before 
+				display: none
+	&--form
+		padding: 112px 0 110px
+		@media (max-width: $media-phone)
+			padding: 30px 0
+	&--footer
+		padding: 92px 0 54px
+		background: #191919
+		@media (max-width: $media-phone)
+			padding: 25px 0 25px
+	&--work
+		padding: 112px 0 98px
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			left: 0
+			bottom: 0
+			border: 40px solid transparent
+			border-bottom: 40px solid #F8F9FA
+			border-left: 40px solid #F8F9FA
+		@media (max-width: $media-phone)
+			padding: 30px 0
+			&::after
+				display: none
+	&--why
+		padding: 124px 0 112px
+		background: #c5dadc
+		@media (max-width: $media-phone)
+			padding: 30px 0
+	&--question
+		padding: 98px 0 132px
+		@media (max-width: $media-phone)
+			padding: 30px 0
+	&--politic
+		padding: 92px 0 97px
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			left: 0
+			bottom: 0
+			border: 30px solid transparent
+			border-bottom: 30px solid #F8F9FA
+			border-left: 30px solid #F8F9FA
+		@media (max-width: $media-phone)
+			padding: 30px 0
+			&::after
+				display: none
+	&--product
+		padding: 38px 0 170px
+		flex-direction: column
+		@media (max-width: $media-phone)
+			padding: 30px 0
+	&--info
+		padding: 122px 0 150px
+		@media (max-width: $media-phone)
+			padding: 30px 0
+	&--map
+		&::after
+    content: ''
+    display: block
+    position: absolute
+    left: 0
+    bottom: 0
+    border: 40px solid transparent
+    border-bottom: 40px solid #F8F9FA
+    border-left: 40px solid #F8F9FA
+	@media (max-width: $media-phone)
+		&::after
+			display: none
+	&--develop
+		padding: 200px 0
+	&--review
+		padding: 90px 0 110px
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			left: 0
+			bottom: 0
+			border: 40px solid transparent
+			border-bottom: 40px solid #F8F9FA
+			border-left: 40px solid #F8F9FA
+		@media (max-width: $media-phone)
+			padding: 30px 0
+			&::after
+				display: none
+	&--galery
+		padding: 30px 0

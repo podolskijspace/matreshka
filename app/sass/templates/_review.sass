@@ -1,0 +1,104 @@
+.review
+  &__left
+    @media (max-width: $media-phone)
+      margin-bottom: 8px
+  &__list 
+    margin: -15px 0
+    margin-bottom: 40px
+    @media (max-width: $media-phone)
+      margin: -8px 0
+  &__item
+    padding: 15px 0
+    &:nth-child(2n)
+      .review__wrapper
+        background: #C5DADD
+    &:nth-child(2n + 1)
+      .review__wrapper
+        background: #F8F9FB
+    @media (max-width: $media-phone)
+      padding: 8px 0
+  &__wrapper
+    padding: 20px 30px 12px 20px
+    display: flex
+    justify-content: space-between
+    @media (max-width: $media-phone)
+      padding: 10px 8px;
+      flex-direction: column;
+      align-items: flex-start;
+  &__name
+    margin: 0 0 12px
+    font-size: 13px
+    font-weight: 700
+    line-height: 100%
+  &__about
+    margin: 0
+    font-size: 14px
+    font-style: italic
+  &__right
+    width: 100px
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    @media (max-width: $media-phone)
+      align-self: flex-end
+  &__date
+    margin: 0 0 14px
+    font-size: 10px
+    line-height: 100%
+    @media (max-width: $media-phone)
+      margin-bottom: 5px
+  &__list-stars
+    display: flex
+    justify-content: flex-end
+    margin: -1px 0
+  &__item-stars
+    padding: 1px 0
+  &__star
+    width: 13px
+  &__title-form
+    margin-bottom: 24px
+    font-size: 22px
+    font-weight: 700
+    line-height: 100%
+  &__label
+    display: block
+    margin-bottom: 20px
+  &__text-label
+    margin: 0 0 4px
+    font-size: 16px
+    font-weight: 700
+    line-height: 100%
+  &__fill
+    color: red
+  &__input
+    width: 180px
+    height: 38px
+    padding-left: 10px
+    background: #F8F9FB
+    border: 0
+    width: 100%
+  &__textarea
+    width: 320px
+    height: 90px
+    padding: 10px
+    border-radius: 3px
+    border: 2px solid #F8F8F8
+    @media (max-width: $media-phone)
+      width: 100%
+  &__button
+    width: 108px
+    height: 36px
+    margin-bottom: 30px
+    font-size: 12px
+    font-weight: 700
+    color: #000
+    border: 0
+    background: #FFD81B
+    @media (max-width: $media-phone)
+      margin: 10px auto
+  &__attention
+    width: 100%
+    padding: 10px
+    font-size: 13px
+    font-style: italic
+    background: #F8F9FB

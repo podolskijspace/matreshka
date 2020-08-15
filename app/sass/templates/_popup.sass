@@ -1,0 +1,361 @@
+.popup 
+  position: fixed
+  opacity: 0
+  pointer-events: none
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 10
+  width: 100%
+  background: rgba(0,0,0,.1)
+  transition: opacity .3s
+  &.active
+    opacity: 1
+    pointer-events: auto
+  &--product
+    .popup
+      &__wrapper
+        width: 929px
+        height: 709px
+        padding: 38px 49px 45px 39px
+        @media (max-width: $media-phone)
+          padding: 15px
+      &__header
+        display: flex
+        justify-content: space-between
+        margin-bottom: 36px
+        @media (max-width: $media-phone)
+          margin-bottom: 8px
+      &__title
+        margin: 0
+        font-size: 24px
+        line-height: 100%
+        font-weight: 700
+        font-style: italic
+        text-decoration: underline
+        color: #242424
+        @media (max-width: $media-phone)
+          font-size: 16px
+      &__close
+        position: relative
+        width: 17px
+        height: 17px
+        margin-top: 3px
+        overflow: hidden
+      &__left-close
+        position: absolute
+        right: -4px
+        top: 9px
+        transform: rotate(45deg)
+        width: 24px
+        height: 1px
+        background-color: #cbcbcb
+      &__right-close
+        position: absolute
+        left: -4px
+        top: 9px
+        transform: rotate(-45deg)
+        width: 24px
+        height: 1px
+        background-color: #cbcbcb
+      &__content
+        padding: 15px 10px
+        overflow: hidden auto
+        height: calc(100% - 131px)
+        max-height: 474px
+        background: #FAFAFA
+        border-radius: 5px
+      &__list-main
+        margin: -30px 0
+      &__item-main
+        padding: 30px 0
+      &__title-content
+        margin: 0
+        font-size: 16px
+        line-height: 100%
+        text-transform: uppercase
+        color: #BEBEBE
+        @media (max-width: $media-phone)
+          font-size: 14px
+      &__subtitle-content
+        margin: 0 0 20px
+        font-size: 16px
+        line-height: 100%
+        color: #BEBEBE
+        @media (max-width: $media-phone)
+          font-size: 14px
+          margin-bottom: 8px
+      &__list
+        display: flex
+        flex-wrap: wrap
+        margin: -8px
+      &__item
+        width: 50%
+        padding: 8px
+        &:after
+          content: ''
+          display: block
+          width: calc(100% - 24px)
+          height: 1px
+          margin-left: 24px
+          background: #BEBEBE
+          transform: translateY(8px)
+        @media (max-width: $media-phone)
+          width: 100%
+      &__wrapper-checkbox
+        display: flex
+        align-items: center
+      &__input
+        margin-right: 8px
+        width: 16px
+        height: 16px
+      &__text-add
+        margin-left: 8px
+        color: #BCBCBC
+        @media (max-width: $media-phone)
+          font-size: 13px
+      &__text-important
+        @media (max-width: $media-phone)
+          font-size: 13px
+      &__bottom
+        display: flex
+        padding-top: 33px
+        padding-left: 46px
+        @media (max-width: $media-phone)
+          padding: 0
+          margin-top: 15
+          flex-wrap: wrap
+          justify-content: space-around
+      &__button
+        width: 187px
+        height: 44px
+        font-size: 14px
+        font-weight: 700
+        background: #F3CD1A
+        border: 0
+        border-radius: 8px
+        &:nth-child(1)
+          margin-right: 28px
+        @media (max-width: $media-phone)
+          margin-bottom: 8px
+          margin-top: 8px
+          font-size: 11px
+          width: 48%
+          height: 24px
+          &:nth-child(1)
+            margin-right: 0
+      &__wrapper-bottom
+        display: flex
+        @media (max-width: $media-phone)
+          width: 100%
+          justify-content: space-around
+      &__wrapper-grey
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 119px
+        height: 47px
+        margin-left: 44px
+        font-size: 18px
+        font-weight: 700
+        background: #F0F0F0
+        border: 0
+        border-radius: 10px
+        overflow: hidden
+        @media (max-width: $media-phone)
+          margin: 0
+          font-size: 13px
+          height: 24px
+          width: 48%
+
+  &--pay
+    .popup
+      &__wrapper
+        width: 640px
+        padding: 20px 40px 40px
+        overflow: auto
+        @media (max-width: $media-phone)
+          padding: 15px
+      &__header
+        position: relative
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding-bottom: 30px
+        margin-bottom: 50px
+        &::after
+          content: ''
+          display: block
+          position: absolute
+          bottom: 0
+          left: 50%
+          transform: translateX(-50%)
+          width: 300px
+          height: 2px
+          background: #000
+        @media (max-width: $media-phone)
+          flex-direction: column
+          &:after
+            width: 100%
+      &__close
+        position: absolute
+        right: 15px
+        width: 17px
+        height: 17px
+        margin-top: 3px
+        overflow: hidden
+      &__left-close
+        position: absolute
+        right: -4px
+        top: 9px
+        transform: rotate(45deg)
+        width: 24px
+        height: 1px
+        background-color: #cbcbcb
+      &__right-close
+        position: absolute
+        left: -4px
+        top: 9px
+        transform: rotate(-45deg)
+        width: 24px
+        height: 1px
+        background-color: #cbcbcb
+      &__name
+        font-size: 33px
+        font-weight: 700
+        color: #F2CC1B
+      &__logo
+        margin: 0 20px
+        margin-left: 53px
+      &__slogan
+        font-size: 28px
+        font-weight: 900
+        q
+          quotes: "\00ab" "\00bb"
+      &__list
+        display: flex
+        margin: 0 -20px 20px
+        @media (max-width: $media-phone)
+          margin: -5px 0 5px
+          flex-wrap: wrap
+      &__item
+        padding: 0 20px
+        width: calc(100% / 3)
+        @media (max-width: $media-phone)
+          padding: 5px 0
+          width: 100%
+      &__input
+        width: 100%
+        height: 35px
+        padding-left: 20px
+        background: #ECEDEE
+        border: 0
+        border-radius: 3px
+        &::placeholder
+          font-size: 14px
+          color: #878787
+          font-style: italic
+        &::-webkit-input-placeholder 
+          font-size: 14px
+          color:#878787
+          font-style: italic
+        &::-moz-placeholder 
+          font-size: 14px
+          color:#878787
+          font-style: italic
+        &:-moz-placeholder 
+          font-size: 14px
+          color:#878787
+          font-style: italic
+        &:-ms-input-placeholder 
+          font-size: 14px
+          color:#878787
+          font-style: italic
+      &__textarea
+        width: 100%
+        height: 80px
+        padding-top: 10px
+        padding-left: 20px
+        background: #ECEDEE
+        border: 0
+        border-radius: 3px
+        &::placeholder
+          font-size: 14px
+          color: #878787
+          font-style: italic
+        &::-webkit-input-placeholder 
+          font-size: 14px
+          color:#878787
+          font-style: italic
+        &::-moz-placeholder 
+          font-size: 14px
+          color:#878787
+          font-style: italic
+        &:-moz-placeholder 
+          font-size: 14px
+          color:#878787
+          font-style: italic
+        &:-ms-input-placeholder 
+          font-size: 14px
+          color:#878787
+          font-style: italic
+      &__bottom
+        display: flex
+        justify-content: space-between
+        height: 40px
+        margin-top: 20px
+        @media (max-width: $media-phone)
+          height: auto
+          margin-top: 10px
+          flex-direction: column
+      &__wrapper-text
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 100%
+        font-size: 14px
+        color:#878787
+        font-style: italic
+        background: #ECEDEE
+        border: 0
+        border-radius: 3px
+        i
+          margin-right: 10px
+          color: #000
+        &:first-child
+          width: calc(100% / 3)
+        &:nth-child(2)
+          margin: 0 31px
+          width: 90px
+        @media (max-width: $media-phone)
+          height: 40px
+          &:first-child, &:nth-child(2)
+            width: 100%
+            margin-bottom: 10px
+            margin-left: 0
+      &__button
+        flex: 1
+        height: 100%
+        padding: 0
+        margin: 0
+        font-size: 14px
+        font-weight: 400
+        color: #000
+        background: #F3CB1B
+        @media (max-width: $media-phone)
+          height: 40px
+          width: 100%
+          flex: auto
+
+
+  &__wrapper
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    max-width: calc(100% - 30px)
+    max-height: calc(100% - 30px)
+    background: #fff
+    border-radius: 5px
+    box-shadow: 0px 2px 30px 5px rgba(#000, .5)
